@@ -1,15 +1,11 @@
 public class Queen extends Character {
-    public static void main(String[] args) {
+    private String name;
 
+    public Queen(String name) {
+        this.name = name;
+    }
 
-        Queen queen = new Queen();
-        queen.setWeaponBehavior(new KnifeBehavior());
-        queen.fight();
-        queen.setWeaponBehavior(new SwordBehavior());
-        queen.fight();
-        queen.setWeaponBehavior(new AxeBehavior());
-        queen.fight();
-        queen.setWeaponBehavior(new BowandArrowBehavior());
-        queen.fight();
+    public String getName() {
+        return name;
     }
 }

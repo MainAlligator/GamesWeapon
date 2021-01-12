@@ -1,16 +1,11 @@
 public class Knight extends Character {
+    private String name;
 
-    public static void main(String[] args) {
+    public Knight(String name) {
+        this.name = name;
+    }
 
-
-        Knight knight = new Knight();
-        knight.setWeaponBehavior(new KnifeBehavior());
-        knight.fight();
-        knight.setWeaponBehavior(new SwordBehavior());
-        knight.fight();
-        knight.setWeaponBehavior(new AxeBehavior());
-        knight.fight();
-        knight.setWeaponBehavior(new BowandArrowBehavior());
-        knight.fight();
+    public String getName() {
+        return name;
     }
 }

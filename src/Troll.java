@@ -1,16 +1,11 @@
 public class Troll extends Character {
+    private String name;
 
-    public static void main(String[] args) {
+    public Troll(String name) {
+        this.name = name;
+    }
 
-
-        Troll troll = new Troll();
-        troll.setWeaponBehavior(new KnifeBehavior());
-        troll.fight();
-        troll.setWeaponBehavior(new SwordBehavior());
-        troll.fight();
-        troll.setWeaponBehavior(new AxeBehavior());
-        troll.fight();
-        troll.setWeaponBehavior(new BowandArrowBehavior());
-        troll.fight();
+    public String getName() {
+        return name;
     }
 }
